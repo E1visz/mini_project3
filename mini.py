@@ -9,7 +9,7 @@ str_data = f.readframes(nframes)
 f.close()
 wave_data = np.fromstring(str_data,dtype = np.short)
 wave_data.shape = -1,2
-wave_data = wave_data.T。
+wave_data = wave_data.T
 time=np.arange(0,nframes/2)/framerate
 # print(params)
 plt.figure(1)
